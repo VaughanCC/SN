@@ -1,9 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Storage.Converters;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Vcc.SocialNetwork.Domain.Model.Entities;
 
 namespace Vcc.SocialNetwork.Domain.Model
