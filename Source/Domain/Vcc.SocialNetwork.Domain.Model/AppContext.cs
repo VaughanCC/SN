@@ -10,7 +10,7 @@ namespace Vcc.SocialNetwork.Domain.Model
         static AppContext()
         {
             //Database.SetInitializer(new DropCreateDatabaseIfModelChanges<AppContext>());
-            // Test
+            // Test - Branch 1
         }
 
         public DbSet<Member> Members { get; set; }
