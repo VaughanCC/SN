@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  vcc.security.idservice:
+    image: ${DOCKER_REGISTRY}vccsecurityidservice
+    build:
+      context: .
+      dockerfile: Source\Vcc.Security.IDService\Dockerfile
