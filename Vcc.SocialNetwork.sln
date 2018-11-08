@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vcc.SocialNet.Common", "Sou
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vcc.SocialNet.Presentation.UI", "Source\Vcc.SocialNet.Presentation.UI\Vcc.SocialNet.Presentation.UI.csproj", "{B1B29874-BA8F-43BE-8678-FA5B80F6EB91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vcc.Security.IDService", "Source\Vcc.Security.IDService\Vcc.Security.IDService.csproj", "{6D6C2D89-E13B-4A43-868C-D11434EFE9CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vcc.Security.IDService", "Source\Vcc.Security.IDService\Vcc.Security.IDService.csproj", "{9FDB35D2-74DD-4614-B724-FDDDF54DEC7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{B1B29874-BA8F-43BE-8678-FA5B80F6EB91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1B29874-BA8F-43BE-8678-FA5B80F6EB91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1B29874-BA8F-43BE-8678-FA5B80F6EB91}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6D6C2D89-E13B-4A43-868C-D11434EFE9CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6D6C2D89-E13B-4A43-868C-D11434EFE9CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6D6C2D89-E13B-4A43-868C-D11434EFE9CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6D6C2D89-E13B-4A43-868C-D11434EFE9CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FDB35D2-74DD-4614-B724-FDDDF54DEC7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FDB35D2-74DD-4614-B724-FDDDF54DEC7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FDB35D2-74DD-4614-B724-FDDDF54DEC7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FDB35D2-74DD-4614-B724-FDDDF54DEC7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
