@@ -1,4 +1,5 @@
-﻿using IdentityServer4.Models;
+﻿using IdentityServer4;
+using IdentityServer4.Models;
 using IdentityServer4.Test;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,11 @@ namespace Vcc.Security.IDService
     /// <remarks>This is required for IdentityServer4.</remarks>
     public class Config
     {
+        /// <summary>
+        /// Returns test users who are registered with Identity Provider service
+        /// </summary>
+        /// <returns></returns>
+        /// <remarks>This is for testing purpose. Actual user classes need to be implemented and this method will be modified.</remarks>
         public static List<TestUser> GetUsers()
         {
             return new List<TestUser>
@@ -47,6 +53,10 @@ namespace Vcc.Security.IDService
             };
         }
 
+        /// <summary>
+        /// Returns Identity Resources
+        /// </summary>
+        /// <returns></returns>
         public static IEnumerable<IdentityResource> GetIdentityResources()
         {
             return new List<IdentityResource>
@@ -55,9 +65,48 @@ namespace Vcc.Security.IDService
                 new IdentityResources.Profile()
             };
         }
+
+        /// <summary>
+        /// Returns the api resources that are currently registerd with Identity Provider service
+        /// </summary>
+        /// <returns></returns>
+        public static IEnumerable<ApiResource> GetApiResources()
+        {
+            return new List<ApiResource>
+            {
+                new ApiResource("Vcc.SocialNet.Api", "Vcc Social Network API")
+            };
+        }
+
+        /// <summary>
+        /// Returns the clients that are currently registered with Identity Provider service
+        /// </summary>
+        /// <returns></returns>
         public static List<Client> GetClients()
         {
-            return new List<Client>();
+            return new List<Client>()
+            {
+                new Client
+                {
+                    ClientName = "Vcc Social Network",
+                    ClientId = "Vcc.SocialNet",
+                    AllowedGrantTypes = GrantTypes.Implicit,
+                    
+                    RedirectUris = new List<string>()
+                    {
+                        "https://localhost:44318/sigin-oidc"
+                    },
+                    AllowedScopes =
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId
+                    },
+                    // For other grant types such as GrantTypes.Hybrid, GrantTypes.Code, etc.
+                    //ClientSecrets =
+                    //{
+                    //    new Secret("secret".Sha256())
+                    //}
+                }
+            };
         }
     }
 }
