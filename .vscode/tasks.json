@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/Source/Vcc.SocialNet.Presentation.UI/Vcc.SocialNet.Presentation.UI.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
