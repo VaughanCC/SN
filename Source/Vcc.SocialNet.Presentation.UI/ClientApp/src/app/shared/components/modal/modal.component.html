@@ -1,0 +1,25 @@
+<button type="button" class="btn btn-info btn-lg" (click)="openModal()">Open</button>
+
+<div class="backdrop" [ngStyle]="{'display': display}"></div>
+<!-- Modal section -->
+<div class="modal" role="dialog" [ngStyle]="{'display':display}">
+  <div class="modal-dialog" role="document">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Title</h4>
+        <button type="button" class="close" aria-label="Close" 
+                (click)="onCloseHandled()">
+                <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!-- model body section -->
+      <div class="modal-body">
+        <p>body text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" (click)="onCloseHandled()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

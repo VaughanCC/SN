@@ -1,0 +1,105 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light static-top">        
+    <a class="navbar-brand" [routerLink]="'/'">Vcc Fellowship</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" 
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>    
+    <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="/dailybreads">Daily Bread</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  role="button" 
+                        data-toggle="dropdown" aria-haspopup="true"  aria-expanded="false">
+                    Group Messages
+                </a>
+                <div class="dropdown-menu text-light bg-light" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" routerLink="/messages">Message List</a>
+                    <a class="dropdown-item" [routerLink]="['/messages', latestMessageId]">Latest Message</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" routerLink="/messages-search">Message Search</a>            
+                </div>
+            </li>
+            <li clas="nav-item">
+                    <a class="nav-link" routerLink="/prayers">Prayers</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Navigation -->
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+		<div class="container">
+			<a class="navbar-brand text-light " routerLink="#">
+				Vcc Fellowship
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav> -->
+	
+	<!-- Page Content -->
+	<!-- <div class="container">
+		<h1 class="mt-4">Logo Nav by Start Bootstrap</h1>
+		<p>The logo in the navbar is now a default Bootstrap feature in Bootstrap 4! Make sure to set the width and height of the logo within the HTML or with CSS. For best results, it's recommended that you use an SVG image as your logo.</p>
+	</div> -->
+	<!-- /.container -->
+
+	<!-- <nav  class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" [routerLink]="'/'">Vcc Fellowship</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" 
+						aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>    
+		<div  class="collapse navbar-collapse"  id="navbarSupportedContent">
+				<ul  class="navbar-nav mr-auto">
+						<li  class="nav-item active">
+						<a  class="nav-link"  href="#">Home <span  class="sr-only">(current)</span></a>
+						</li>
+						<li  class="nav-item dropdown">
+							<a  class="nav-link dropdown-toggle"  href="#"  id="navbarDropdown"  role="button"  data-toggle="dropdown"  aria-haspopup="true"  aria-expanded="false">
+							Actions
+							</a>
+							<div  class="dropdown-menu"  aria-labelledby="navbarDropdown">
+                                <a  class="dropdown-item" [routerLink]="'/accounts'"> Accounts </a>
+                                <a  class="dropdown-item" [routerLink]="'/create-account'"> Create Account </a>
+                                <div  class="dropdown-divider"></div>
+                                <a  class="dropdown-item" [routerLink]="'/contacts'"> Contacts </a>
+                                <a  class="dropdown-item" [routerLink]="'/create-contact'"> Create Contact </a>
+                                <div  class="dropdown-divider"></div>
+                                <a  class="dropdown-item" [routerLink]="'/leads'"> Leads </a>
+                                <a  class="dropdown-item" [routerLink]="'/create-lead'"> Create Lead </a>
+                                <div  class="dropdown-divider"></div>
+                                <a  class="dropdown-item" [routerLink]="'/opportunities'"> Opportunities </a>
+                                <a  class="dropdown-item" [routerLink]="'/create-opportunity'"> Create Opportunity </a>
+							</div>
+						</li>
+			</ul>
+		</div>
+	</nav>
+	<div  class="container-fluid">
+			<router-outlet></router-outlet>
+	</div> -->

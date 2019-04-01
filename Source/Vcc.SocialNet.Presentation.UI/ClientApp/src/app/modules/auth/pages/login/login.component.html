@@ -1,0 +1,25 @@
+<div class="alert alert-info" role="alert">
+  Log In
+</div>
+
+<div [hidden]="!error" class="alert alert-danger">
+  {{ error }}
+</div>
+<form (ngSubmit)="login()" [formGroup]="loginForm">
+  <div class="form-group">
+    <label class="d-block">
+      <input type="text" class="form-control" [placeholder]="'username'" formControlName="username">
+      <app-control-messages id="msg-username" [control]="f['username']" [labelName]="'User Name'"></app-control-messages>
+    </label>
+    <label class="d-block">
+      <input type="password" class="form-control" [placeholder]="'password'" formControlName="password">
+      <app-control-messages id="msg-password" [control]="f['password']" [labelName]="'Password'"></app-control-messages>
+    </label>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary btn-block btn-raised" [disabled]="loginForm.invalid">
+        <span [hidden]="isLoading">Submit</span>
+        <span [hidden]="!isLoading"><i class="fas fa-asterisk fa-2x fa-spin"></i></span>
+      </button>
+    </div>
+  </div>
+</form>
