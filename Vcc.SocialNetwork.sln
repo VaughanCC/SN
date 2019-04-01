@@ -3,17 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vcc.SocialNet.Data.Repository", "Source\Vcc.SocialNet.Data.Repository\Vcc.SocialNet.Data.Repository.csproj", "{C87CACAE-02A5-49E8-B69F-22EA2C6C9692}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vcc.SocialNet.Domain.Model", "Source\Vcc.SocialNet.Domain.Model\Vcc.SocialNet.Domain.Model.csproj", "{6EB1E0EA-4353-46B7-9005-0DD2851C9CC3}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vcc.SocialNet.Presentation.Services", "Source\Vcc.SocialNet.Presentation.Services\Vcc.SocialNet.Presentation.Services.csproj", "{F1A8311A-1544-441D-A4A4-D27655083A71}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vcc.SocialNet.Common", "Source\Vcc.SocialNet.Common\Vcc.SocialNet.Common.csproj", "{F59542B0-76D0-4735-8EA1-53A387ADBB52}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vcc.SocialNet.Presentation.UI", "Source\Vcc.SocialNet.Presentation.UI\Vcc.SocialNet.Presentation.UI.csproj", "{B1B29874-BA8F-43BE-8678-FA5B80F6EB91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vcc.Security.IDService", "Source\Vcc.Security.IDService\Vcc.Security.IDService.csproj", "{6D6C2D89-E13B-4A43-868C-D11434EFE9CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vcc.Security.IDService", "Source\Vcc.Security.IDService\Vcc.Security.IDService.csproj", "{6D6C2D89-E13B-4A43-868C-D11434EFE9CA}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{A0C4264C-222D-4692-A339-3AA747F3F483}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserService", "UserService", "{05EC2068-D30F-492A-B00F-09336095522B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vcc.SocialNet.UserService.Common", "Source\UserService\Vcc.SocialNet.UserService.Common\Vcc.SocialNet.UserService.Common.csproj", "{C8020647-DB17-4F7C-9628-52882CD37284}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vcc.SocialNet.UserService.Data", "Source\UserService\Vcc.SocialNet.UserService.Data\Vcc.SocialNet.UserService.Data.csproj", "{1911FEA2-064E-4C10-A4D3-1540728B7E46}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vcc.SocialNet.UserService.Service", "Source\UserService\Vcc.SocialNet.UserService.Service\Vcc.SocialNet.UserService.Service.csproj", "{AABFFB27-1A3F-460F-9C9C-78D53D33FB2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityService", "IdentityService", "{511E927A-71C2-43E8-AA8B-E58DA1F2E928}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,22 +25,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C87CACAE-02A5-49E8-B69F-22EA2C6C9692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C87CACAE-02A5-49E8-B69F-22EA2C6C9692}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C87CACAE-02A5-49E8-B69F-22EA2C6C9692}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C87CACAE-02A5-49E8-B69F-22EA2C6C9692}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6EB1E0EA-4353-46B7-9005-0DD2851C9CC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6EB1E0EA-4353-46B7-9005-0DD2851C9CC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6EB1E0EA-4353-46B7-9005-0DD2851C9CC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6EB1E0EA-4353-46B7-9005-0DD2851C9CC3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F1A8311A-1544-441D-A4A4-D27655083A71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F1A8311A-1544-441D-A4A4-D27655083A71}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F1A8311A-1544-441D-A4A4-D27655083A71}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F1A8311A-1544-441D-A4A4-D27655083A71}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F59542B0-76D0-4735-8EA1-53A387ADBB52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F59542B0-76D0-4735-8EA1-53A387ADBB52}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F59542B0-76D0-4735-8EA1-53A387ADBB52}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F59542B0-76D0-4735-8EA1-53A387ADBB52}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B1B29874-BA8F-43BE-8678-FA5B80F6EB91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B1B29874-BA8F-43BE-8678-FA5B80F6EB91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1B29874-BA8F-43BE-8678-FA5B80F6EB91}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,9 +33,30 @@ Global
 		{6D6C2D89-E13B-4A43-868C-D11434EFE9CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D6C2D89-E13B-4A43-868C-D11434EFE9CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D6C2D89-E13B-4A43-868C-D11434EFE9CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0C4264C-222D-4692-A339-3AA747F3F483}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0C4264C-222D-4692-A339-3AA747F3F483}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0C4264C-222D-4692-A339-3AA747F3F483}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0C4264C-222D-4692-A339-3AA747F3F483}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8020647-DB17-4F7C-9628-52882CD37284}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8020647-DB17-4F7C-9628-52882CD37284}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8020647-DB17-4F7C-9628-52882CD37284}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8020647-DB17-4F7C-9628-52882CD37284}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1911FEA2-064E-4C10-A4D3-1540728B7E46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1911FEA2-064E-4C10-A4D3-1540728B7E46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1911FEA2-064E-4C10-A4D3-1540728B7E46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1911FEA2-064E-4C10-A4D3-1540728B7E46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AABFFB27-1A3F-460F-9C9C-78D53D33FB2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AABFFB27-1A3F-460F-9C9C-78D53D33FB2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AABFFB27-1A3F-460F-9C9C-78D53D33FB2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AABFFB27-1A3F-460F-9C9C-78D53D33FB2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C8020647-DB17-4F7C-9628-52882CD37284} = {05EC2068-D30F-492A-B00F-09336095522B}
+		{1911FEA2-064E-4C10-A4D3-1540728B7E46} = {05EC2068-D30F-492A-B00F-09336095522B}
+		{AABFFB27-1A3F-460F-9C9C-78D53D33FB2A} = {05EC2068-D30F-492A-B00F-09336095522B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {99CAD936-8D63-41CE-A51C-6D6FA9C7774F}

@@ -3,10 +3,10 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Windows</DockerTargetOS>
-    <ProjectGuid>cf4d1502-9691-484b-8591-e85c879350cd</ProjectGuid>
+    <ProjectGuid>a0c4264c-222d-4692-a339-3aa747f3f483</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://{ServiceIPAddress}{ServicePort}</DockerServiceUrl>
-    <DockerServiceName>vcc.security.idservice</DockerServiceName>
+    <DockerServiceName>vcc.socialnet.presentation.ui</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">

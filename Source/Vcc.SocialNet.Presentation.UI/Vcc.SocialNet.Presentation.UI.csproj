@@ -10,7 +10,7 @@
 
     <!-- Set this to true if you enable server-side prerendering -->
     <BuildServerSideRenderer>false</BuildServerSideRenderer>
-    <AssemblyName>ASP.NET Core 2.1 with Angular 7</AssemblyName>
+    <AssemblyName>Vcc.SocialNet.Presentation.UI</AssemblyName>
     <RootNamespace>Vcc.SocialNet.Presentation.UI</RootNamespace>
     <Version>1.7.0</Version>
     <Authors>Bernardo Lloret-Fuentes</Authors>
@@ -20,6 +20,7 @@
     <Description>ASP.NET Core 2.1 with Angular 7</Description>
     <PackageProjectUrl>https://github.com/blfuentes/NETCore2_Angular7_Template</PackageProjectUrl>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -32,6 +33,10 @@
     <!-- Don't publish the SPA source files, but do show them in the project files list -->
     <Content Remove="$(SpaRoot)**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

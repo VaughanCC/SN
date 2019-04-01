@@ -1,8 +1,8 @@
 version: '3.4'
 
 services:
-  vcc.security.idservice:
-    image: ${DOCKER_REGISTRY}vccsecurityidservice
+  vcc.socialnet.presentation.ui:
+    image: ${DOCKER_REGISTRY-}vccsocialnetpresentationui
     build:
       context: .
-      dockerfile: Source\Vcc.Security.IDService\Dockerfile
+      dockerfile: Source\Vcc.SocialNet.Presentation.UI\Dockerfile
