@@ -42,6 +42,26 @@ namespace Vcc.SocialNet.UserService.Data.Repository
             return member;
         }
 
+
+        /// <summary>
+        /// Returns a Member based on email
+        /// </summary>
+        /// <param name="email"></param>
+        /// <returns></returns>
+        public async Task<MemberEntity> GetMemberByEmailAsync(string email)
+        {
+            MemberEntity member = null;
+            if(email != null)
+            {
+                member = await _dbContext.Members.FirstOrDefaultAsync(m => string.Compare(m.Email, email, true) == 0);
+            }
+            return member;
+        }
+
+        /// <summary>
+        ///  Returns the list of all members
+        /// </summary>
+        /// <returns></returns>
         public async Task<IEnumerable<MemberEntity>> GetMembersAsync()
         {            
             var members = await _dbContext.Members.ToListAsync();
@@ -60,7 +80,7 @@ namespace Vcc.SocialNet.UserService.Data.Repository
         }
         #endregion
 
-        #region Asynchronous methods
+        #region Synchronous methods
         public MemberEntity CreateMember(MemberEntity member)
         {
             _dbContext.Members.Add(member);
@@ -82,6 +102,12 @@ namespace Vcc.SocialNet.UserService.Data.Repository
         public MemberEntity GetMemberById(int memberId)
         {
             var member = _dbContext.Members.Find(memberId);
+            return member;
+        }
+
+        public MemberEntity GetMemberByEmail(string email)
+        {
+            var member = _dbContext.Members.FirstOrDefault(m => string.Compare(m.Email, email, true)==0);
             return member;
         }
 

@@ -31,7 +31,8 @@ export class AuthService {
    * @param loginContext 
    */
   login(loginContext: ILoginContext): Observable<User> {
-    return apiService.fetch("api/v1/ShowUserByID")
+    var url: string = "api/v1/users/email/" + loginContext.username;
+    return this.apiService.fetch(url);
     
     // if ( 
     //   loginContext.username === defaultUser.username &&
@@ -39,7 +40,7 @@ export class AuthService {
     //     return of(defaultUser);
     // }
 
-    return throwError('Invalid username or password');
+    // return throwError('Invalid username or password');
   }
 
   logout(): Observable<boolean> {

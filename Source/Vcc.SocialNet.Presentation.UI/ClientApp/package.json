@@ -11,7 +11,7 @@
     "compodoc": "./node_modules/.bin/compodoc -p src/tsconfig.app.json -w -s",
     "json:server": "json-server --watch mock-data/data.json --port 4000",
     "test-debug": "ng test --browsers ChromeDebug"
-  },  
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~7.1.0",
@@ -37,6 +37,7 @@
     "rxjs": "~6.3.3",
     "rxjs-compat": "^6.3.3",
     "tslib": "^1.9.0",
+    "yarn": "^1.15.2",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {

@@ -72,6 +72,38 @@ namespace Vcc.SocialNet.UserService.Service.Controllers
         }
 
         /// <summary>
+        /// Info for a specific user
+        /// </summary>
+        /// <param name="userId">The id of the user to retrieve</param>
+        /// <response code="200">Expected response to a valid request</response>
+        /// <response code="0">unexpected error</response>
+        [HttpGet]
+        [Route("users/email/{email}")]
+        [ValidateModelState]
+        [SwaggerOperation("ShowUserByEmail")]
+        [SwaggerResponse(statusCode: 200, type: typeof(List<User>), description: "Expected response to a valid request")]
+        [SwaggerResponse(statusCode: 0, type: typeof(Error), description: "unexpected error")]
+        public async virtual Task<ActionResult<User>> ShowUserByEmail([FromRoute][Required]string email)
+        {
+            LogEnter("ShowUserByEmail", email);
+
+            ActionResult<User> result;
+            MemberEntity member = await _repo.GetMemberByEmailAsync(email);
+            if (member != null)
+            {
+                User userViewModel = _mapper.Map<User>(member);
+                result = Ok(userViewModel);
+            }
+            else
+            {
+                result = NotFound();
+            }
+
+            LogExit("ShowUserById", result);
+            return result;
+        }
+
+        /// <summary>
         /// List all users
         /// </summary>
         /// <param name="limit">How many items to return at one time (max 100)</param>

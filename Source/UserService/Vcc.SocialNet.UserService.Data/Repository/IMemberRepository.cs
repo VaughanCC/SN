@@ -14,6 +14,7 @@ namespace Vcc.SocialNet.UserService.Data.Repository
         #region Synchronous methods
         IEnumerable<MemberEntity> GetMembers();
         MemberEntity GetMemberById(int memberId);
+        MemberEntity GetMemberByEmail(string email);
         MemberEntity CreateMember(MemberEntity member);
         void DeleteMember(int memberId);
         void UpdateMember(MemberEntity member);
@@ -23,6 +24,7 @@ namespace Vcc.SocialNet.UserService.Data.Repository
         #region Asynchronous methods
         Task<IEnumerable<MemberEntity>> GetMembersAsync();
         Task<MemberEntity> GetMemberByIdAsync(int memberId);
+        Task<MemberEntity> GetMemberByEmailAsync(string email);
         Task<MemberEntity> CreateMemberAsync(MemberEntity member);
         Task DeleteMemberAsync(int memberId);
         Task UpdateMemberAsync(MemberEntity member);
