@@ -16,6 +16,10 @@ namespace Vcc.SocialNet.UserService.Data.Entities
         [MaxLength(200)]
         public string Email { get; set; }
 
+        // this is a temporary field until OpenID Connect is implemented
+        [MaxLength(10)]
+        public string Password { get; set; }
+
         [Required]
         [MaxLength(60)]
         public string LastName { get; set; }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Vcc.SocialNet.UserService.Service.Controllers
 {
     [ApiController()]
-    [Route("api/v1")]
+    [Route("api")]
     public abstract class ApiControllerBase : ControllerBase
     {
         protected virtual string ClassName
@@ -19,14 +19,28 @@ namespace Vcc.SocialNet.UserService.Service.Controllers
 
         protected void LogEnter(string methodName, params object[] args)
         {
-            string argStr = String.Join("|", (args!=null)?args.ToString():"null");
-            if (Logger.IsEnabled(LogLevel.Debug)) Logger.LogDebug($"Entering {ClassName}/{methodName} - {argStr}");
+            try
+            {
+                string argStr = String.Join("|", (args != null) ? args : null);
+                if (Logger.IsEnabled(LogLevel.Debug)) Logger.LogDebug($"Entering {ClassName}/{methodName} - {argStr}");
+            }
+            catch
+            {
+                // error logging is not working - continue
+            }
         }
 
         protected void LogExit(string methodName, params object[] returnValues)
         {
-            string returnValueStr = String.Join("|", (returnValues != null) ? returnValues.ToString() : "null");
-            if (Logger.IsEnabled(LogLevel.Debug)) Logger.LogDebug($"Existing {ClassName}/{methodName} - {returnValueStr}");
+            try
+            {
+                string returnValueStr = String.Join("|", (returnValues != null) ? returnValues : null);
+                if (Logger.IsEnabled(LogLevel.Debug)) Logger.LogDebug($"Existing {ClassName}/{methodName} - {returnValueStr}");
+            }
+            catch
+            {
+                // error logging is not working - continue
+            }
         }
     }
 }

@@ -33,7 +33,10 @@ namespace Vcc.SocialNet.UserService.Service.Controllers
         }
 
 
-        public UserController(IMemberRepository memberRepository, IMapper mapper, ILogger<UserController> logger)
+        public UserController(
+            IMemberRepository memberRepository, 
+            IMapper mapper,
+            ILogger<UserController> logger)
         {
             _repo = memberRepository;
             _mapper = mapper;
@@ -46,6 +49,7 @@ namespace Vcc.SocialNet.UserService.Service.Controllers
         /// <response code="200">Expected response to a valid request</response>
         /// <response code="0">unexpected error</response>
         [HttpGet]
+        [ApiVersionNeutral]
         [Route("users/{userId}")]
         [ValidateModelState]
         [SwaggerOperation("ShowUserById")]
@@ -89,7 +93,7 @@ namespace Vcc.SocialNet.UserService.Service.Controllers
 
             ActionResult<User> result;
             MemberEntity member = await _repo.GetMemberByEmailAsync(email);
-            if (member != null)
+             if (member != null)
             {
                 User userViewModel = _mapper.Map<User>(member);
                 result = Ok(userViewModel);

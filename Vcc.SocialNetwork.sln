@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vcc.SocialNet.UserService.S
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityService", "IdentityService", "{511E927A-71C2-43E8-AA8B-E58DA1F2E928}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vcc.SocialNet.UserService.ServiceTests", "Source\UserService\Vcc.SocialNet.UserService.ServiceTests\Vcc.SocialNet.UserService.ServiceTests.csproj", "{68AA14A6-B0E4-4509-9332-BDE2234D0BC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{AABFFB27-1A3F-460F-9C9C-78D53D33FB2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AABFFB27-1A3F-460F-9C9C-78D53D33FB2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AABFFB27-1A3F-460F-9C9C-78D53D33FB2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68AA14A6-B0E4-4509-9332-BDE2234D0BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68AA14A6-B0E4-4509-9332-BDE2234D0BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68AA14A6-B0E4-4509-9332-BDE2234D0BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68AA14A6-B0E4-4509-9332-BDE2234D0BC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +63,7 @@ Global
 		{C8020647-DB17-4F7C-9628-52882CD37284} = {05EC2068-D30F-492A-B00F-09336095522B}
 		{1911FEA2-064E-4C10-A4D3-1540728B7E46} = {05EC2068-D30F-492A-B00F-09336095522B}
 		{AABFFB27-1A3F-460F-9C9C-78D53D33FB2A} = {05EC2068-D30F-492A-B00F-09336095522B}
+		{68AA14A6-B0E4-4509-9332-BDE2234D0BC8} = {05EC2068-D30F-492A-B00F-09336095522B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {99CAD936-8D63-41CE-A51C-6D6FA9C7774F}

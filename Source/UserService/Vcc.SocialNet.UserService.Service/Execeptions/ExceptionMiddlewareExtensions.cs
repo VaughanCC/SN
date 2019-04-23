@@ -10,6 +10,12 @@ using System.Threading.Tasks;
 
 namespace Vcc.SocialNet.UserService.Service.Execeptions
 {
+    /// <summary>
+    /// Extension class for ExceptionMiddleware that centralizes error handling
+    /// </summary>
+    /// <remarks>
+    /// The ConfigureExceptionHandler should be called from Configure method of the Startup class
+    /// </remarks>
     public static class ExceptionMiddlewareExtensions
     {
         public static void ConfigureExceptionHandler(this IApplicationBuilder app, ILogger logger)
