@@ -5,7 +5,6 @@ import { TodaysBreadComponent } from './components/todays-bread/todays-bread.com
 import { PrayerWidgetComponent } from './components/prayer-widget/prayer-widget.component';
 import { MessageWidgetComponent } from './components/message-widget/message-widget.component';
 import { CourseWidgetComponent } from './components/course-widget/course-widget.component';
-
 /**
  * Home Module
  * 
@@ -20,7 +19,7 @@ import { CourseWidgetComponent } from './components/course-widget/course-widget.
         CourseWidgetComponent
     ],
     imports: [
-        HomeRoutingModule
+        HomeRoutingModule,
     ],
     exports: [HomeComponent],
     providers: [],

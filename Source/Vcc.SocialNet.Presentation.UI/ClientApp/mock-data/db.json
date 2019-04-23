@@ -1,0 +1,93 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "joon.choi@gmail.com",
+      "lastName": "Choi",
+      "firstName": "Joon",
+      "dateOfBirth": "1972-04-16T00:00:00",
+      "gender": "male",
+      "position": "layman",
+      "cellPhone": "4168493938",
+      "homePhone": "4169026859",
+      "city": "Toronto",
+      "province": "ON",
+      "address": "160 Borrows Street",
+      "postalCode": "L3J 2S9"
+    },
+    {
+      "id": 2,
+      "email": "joon.choi@gmail.com",
+      "lastName": "Choi",
+      "firstName": "Joon2",
+      "dateOfBirth": "1972-04-16T00:00:00",
+      "gender": "male",
+      "position": "layman",
+      "cellPhone": "4168493938",
+      "homePhone": "4169026859",
+      "city": "Toronto",
+      "province": "ON",
+      "address": "160 Borrows Street",
+      "postalCode": "L3J 2S9"
+    },
+    {
+      "id": 3,
+      "email": "joon.choi@gmail.com",
+      "lastName": "Choi",
+      "firstName": "Joon3",
+      "dateOfBirth": "1972-04-16T00:00:00",
+      "gender": "male",
+      "position": "layman",
+      "cellPhone": "4168493938",
+      "homePhone": "4169026859",
+      "city": "Toronto",
+      "province": "ON",
+      "address": "160 Borrows Street",
+      "postalCode": "L3J 2S9"
+    },
+    {
+      "id": 4,
+      "email": "joon.choi@gmail.com",
+      "lastName": "Choi",
+      "firstName": "Joon4",
+      "dateOfBirth": "1972-04-16T00:00:00",
+      "gender": "male",
+      "position": "layman",
+      "cellPhone": "4168493938",
+      "homePhone": "4169026859",
+      "city": "Toronto",
+      "province": "ON",
+      "address": "160 Borrows Street",
+      "postalCode": "L3J 2S9"
+    },
+    {
+      "id": 5,
+      "email": "joon.choi@gmail.com",
+      "lastName": "Choi",
+      "firstName": "Joon5",
+      "dateOfBirth": "1972-04-16T00:00:00",
+      "gender": "male",
+      "position": "layman",
+      "cellPhone": "4168493938",
+      "homePhone": "4169026859",
+      "city": "Toronto",
+      "province": "ON",
+      "address": "160 Borrows Street",
+      "postalCode": "L3J 2S9"
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    }
+  ],
+  "auth": {
+    "authenticate": [
+      {
+        "Token": "",
+        "Success": true
+      }
+    ]
+  }
+}

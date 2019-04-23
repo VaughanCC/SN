@@ -7,6 +7,10 @@ import { AuthRoutingModule } from './auth.routing';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
+
+import { MaterialModule } from '@app/shared/material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 @NgModule({
   declarations: [
     LoginComponent,
@@ -18,7 +22,9 @@ import { FormsModule } from '@angular/forms';
     SharedModule,
     ReactiveFormsModule,
     FontAwesomeModule,
-    FormsModule
+    FormsModule,
+    MaterialModule,
+    FlexLayoutModule
   ]  
 })
 export class AuthModule { }

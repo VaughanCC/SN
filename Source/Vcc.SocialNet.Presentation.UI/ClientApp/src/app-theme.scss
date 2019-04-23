@@ -1,0 +1,25 @@
+@import '~@angular/material/theming';
+
+// custom component theme files
+@import './app/modules/auth/pages/login/login.component.theme.scss';
+// ...
+
+// always include only once per project
+@include mat-core();
+
+// define 3 theme color
+// mat-palette accepts $palette-name, main, lighter and darker variants
+$app-theme-primary: mat-palette($mat-indigo, 700, 300, 900);
+$app-theme-accent: mat-palette($mat-light-blue);
+$app-theme-warn: mat-palette($mat-deep-orange, A200);
+
+// create theme (use mat-dark-theme for themes with dark backgrounds)
+$app-theme: mat-light-theme(
+    $app-theme-primary,
+    $app-theme-accent,
+    $app-theme-warn
+);
+
+// use our theme with angular-material-theme mixin
+@include angular-material-theme($app-theme);
+@include login-component-theme($app-theme);

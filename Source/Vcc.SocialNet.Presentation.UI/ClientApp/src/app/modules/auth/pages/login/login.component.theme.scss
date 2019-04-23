@@ -1,0 +1,13 @@
+@mixin login-component-theme($theme) {
+
+    $primary: map-get($theme, primary);
+    $accent: map-get($theme, accent);
+    $warn: map-get($theme, warn);
+    $background: map-get($theme, background);
+    $foreground: map-get($theme, foreground);
+
+    .auth-box.mat-card {
+        @include mat-elevation(8, mat-color($primary), 0.9);
+        width: 400px;        
+    }
+}

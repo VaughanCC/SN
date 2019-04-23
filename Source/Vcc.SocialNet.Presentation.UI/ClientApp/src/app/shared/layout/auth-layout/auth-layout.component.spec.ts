@@ -9,9 +9,9 @@ import { SharedModule } from '@app/shared/shared.module';
 // Need the following to resolve an error related to "staticInjectorError(DynamicTestModule)[RouterOutlet -> ChildrenOutletContexts]"
 import { AppRoutingModule } from '@app/app-routing.module';
 // Need the following to resolve ContentLayoutComponent as it is used in app routing
-import { ContentLayoutComponent } from '@app/layouts/content-layout/content-layout.component';
+import { ContentLayoutComponent } from '@app/shared/layout/content-layout/content-layout.component';
 // Need the following to resolve AuthLayoutComponent as it is used in app routing
-import { AuthLayoutComponent } from '@app/layouts/auth-layout/auth-layout.component';
+import { AuthLayoutComponent } from '@app/shared/layout/auth-layout/auth-layout.component';
 // Need the following to resolve "can't bind to 'icon' since it is unknown property of 'fa-icon'"
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 ////////////////////////////////////////////////////////////////////////////////

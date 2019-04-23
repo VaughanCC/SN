@@ -1,25 +1,39 @@
-<div class="alert alert-info" role="alert">
-  Log In
-</div>
+<mat-card class="auth-box text-center">
+    <mat-card-title>
+      <mat-icon class="auth-title" color="primary">face</mat-icon>
+      <!--<fa-icon [icon]="faUserCircle" size="3x"></fa-icon>-->
+    </mat-card-title>
+    <mat-card-content>
+      <div class="alert alert-info" role="alert">
+        Log In
+      </div>
 
-<div [hidden]="!error" class="alert alert-danger">
-  {{ error }}
-</div>
-<form (ngSubmit)="login()" [formGroup]="loginForm">
-  <div class="form-group">
-    <label class="d-block">
-      <input type="text" class="form-control" [placeholder]="'username'" formControlName="username">
-      <app-control-messages id="msg-username" [control]="f['username']" [labelName]="'User Name'"></app-control-messages>
-    </label>
-    <label class="d-block">
-      <input type="password" class="form-control" [placeholder]="'password'" formControlName="password">
-      <app-control-messages id="msg-password" [control]="f['password']" [labelName]="'Password'"></app-control-messages>
-    </label>
-    <div class="form-group">
-      <button type="submit" class="btn btn-primary btn-block btn-raised" [disabled]="loginForm.invalid">
-        <span [hidden]="isLoading">Submit</span>
-        <span [hidden]="!isLoading"><i class="fas fa-asterisk fa-2x fa-spin"></i></span>
-      </button>
-    </div>
-  </div>
-</form>
+      <div [hidden]="!error" class="alert alert-danger">
+        {{ error }}
+      </div>
+      <form (ngSubmit)="login()" [formGroup]="loginForm">
+        <div fxLayout="column" fxLayoutAlign="space-between stretch" class="auth-submit-container">
+          <mat-form-field >
+            <input matInput type="text" [placeholder]="'username'" formControlName="username" [readonly]="isLoggingIn">
+          </mat-form-field>
+          <app-control-messages id="msg-username" [control]="f['username']" [labelName]="'User Name'"></app-control-messages>
+          <mat-form-field >
+            <input matInput type="password" [placeholder]="'password'" formControlName="password" [readonly]="isLoggingIn">
+          </mat-form-field>
+          <app-control-messages id="msg-password" [control]="f['password']" [labelName]="'Password'"></app-control-messages>
+          <mat-checkbox formControlName="rememberLogin" [disabled]="isLoggingIn" class="">Remember my login</mat-checkbox>
+          <button mat-raised-button type="submit" 
+            [disabled]="loginForm.invalid || isLoggingIn" color="primary">
+            <span>Submit</span>
+            <mat-spinner [hidden]="!isLoggingIn" strokeWidth="5" [diameter]="25" aria-label="Loggin in" class="auth-spinner"></mat-spinner>
+          </button>            
+          <!-- used to indicating authentication is in progress instead of displaying spinning icon inside the submit button
+              <spinner-dialog></spinner-dialog>   
+          -->
+        </div>
+      </form>      
+      
+    </mat-card-content>
+  </mat-card>
+
+

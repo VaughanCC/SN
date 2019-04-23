@@ -5,3 +5,19 @@
 $fa-font-path: "../node_modules/@fortawesome/fontawesome-free-webfonts/webfonts";
 @import "../node_modules/@fortawesome/fontawesome-free-webfonts/scss/fontawesome.scss";
 @import "../node_modules/@fortawesome/fontawesome-free-webfonts/scss/fa-solid.scss";
+//@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+// import our custom theme
+@import './app-theme';
+
+// // additional css classes can be added as follows if the app supports multiple themes
+// // you can hardcode one of them on the <body> tag 
+// // or switch dynamically during runtime with [class]
+// @import 'app-light-theme.scss'; // need to create app-light-theme.scss file beforehand similar to app-theme.scss
+// .app-light-theme {
+//     @include angular-material-theme($app-light-theme);
+// }
+// @import 'app-dark-theme.scss';  // need to create app-dark-theme.scss file beforehand similar to app-theme.scss
+// .app-dark-theme {
+//   @include angular-material-theme($app-dark-theme);
+// }

@@ -12,10 +12,6 @@ import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
 })
 export class AuthLayoutComponent implements OnInit {
 
-  /**
-   * Icon selected for the header section of the log in box
-   */
-  faUserCircle = faUserCircle;
   /** 
    * Banner image source
    */
@@ -34,7 +30,7 @@ export class AuthLayoutComponent implements OnInit {
    */
   private generateBannerUrl() : string {
     const seq : number = Math.floor(Math.random() * 2) + 1;
-    const bannerUrl : string = `'../../../assets/images/church_banner_${seq}.jpg`;
+    const bannerUrl : string = `../../../../assets/images/church_banner_${seq}.jpg`;
     return bannerUrl;
   }
 
